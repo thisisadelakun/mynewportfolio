@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/PhotoID_2.jpg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Adelakun Portfolio</title>
+</head>
+
+<body>
+    <!-- ------------- HEADER SECTION--------- -->
+
+    <header>
+        <div class="header">
+            <div class="nav">
+                <nav class="navbar">
+                    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+                    <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <div class="navbar-title">
+                        <img src="./Assets/My new photo ID.png" href="#top" alt="logo">
+                    </div>
+                    <div>
+                        <nav class="navbar-menu">
+                            <li type="button" class="button"><a href="#about-me">About</a></li>
+                            <li type="button" class="button"><a href="#experience">Experience</a></li>
+                            <li type="button" class="button"><a href="#projects">Projects</a></li>
+                            <li type="button" class="button"><a href="#contact-me">Contact</a></li>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-text">
+                <span>
+                    Hi there, my name is
+                </span>
+                <h1>
+                    Abayomi Adelakun.
+                </h1>
+                <h6>
+                    Web developer.
+                </h6>
+                <p>
+                    I'm passionate about web programming. Through constant practice & learning, I make
+                    things pretty and easy to use and I'm excited to share my projects with you.
+                </p>
+
+                <a href="#about-me" class="scroll">
+                    Scroll Down <i class="bi bi-chevron-double-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------- MAIN SECTION -------- -->
+
+    <main>
+        <div id="about-me" class="about-me">
+            <div class="about-me-header">
+                <h3>
+                    About Me
+                </h3>
+            </div>
+
+            <div class="about-me-main-content">
+                <div class="about-me-main-left-content">
+                    <div class="about-me-content">
+                        <p>
+                            Over the last few years, having developed a keen eye for the emerging technologies around me
+                            I
+                            have
+                            continuously strived to gain and improve my <span>knowledge</span> of all aspects of the
+                            <span>web</span>. I am Abayomi Adelakun
+                        </p>
+                        <p>
+                            Giving a quick overview of myself,During my later years in the University, I studied
+                            <span>HTML</span>, <span>CSS</span>, and <span> Javascript</span> through different YouTube
+                            channels
+                            and Free code camp websites in my free time, which helped to give me a foundation that I
+                            could
+                            later
+                            build upon.
+                        </p>
+                        <P>
+                            After a while, my dedication to self-improvement in <span>web design</span> and
+                            <span>development
+                            </span> inspired me to enroll in a Bootcamp to learn <span>Full Stack Web
+                                Development</span>.
+                            This transition greatly helped improve my knowledge of <span>Web development</span>.
+                        </P>
+                    </div>
+
+                    <div class="skills">
+                        <h6>
+                            My Skills
+                        </h6>
+                        <div class="list-skills">
+                            <div class="skills-li">
+                                <P>
+                                    Frontend:
+                                </P>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Reactjs</li>
+                            </div>
+
+                            <div class="skills-li">
+                                <P>
+                                    Backend:
+                                </P>
+                                <li>Python</li>
+                                <li>Django</li>
+                            </div>
+
+                            <div class="skills-li">
+                                <P>
+                                    Tools:
+                                </P>
+                                <li>VSC</li>
+                                <li>Git</li>
+                                <li>Figma</li>
+                            </div>
+
+                            <div class="skills-li">
+                                <P>
+                                    Others:
+                                </P>
+                                <li>Good team working skills</li>
+                                <li>Analytical skills</li>
+                                <li>Lab Safety</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery about-me-main-right-content">
+                    <h6>
+                        My Photos
+                    </h6>
+
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="slide-image img-fluid" src="./Assets/PhotoID_2.jpg" class="d-block w-100"
+                                    alt="Adelakun">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="slide-image img-fluid" src="./Assets/IMG-2776.jpg" class="d-block w-100"
+                                    alt="Adelakun_Graduation_day">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="slide-image img-fluid" src="./Assets/IMG-1612.jpg" class="d-block w-100"
+                                    alt="Adelakun_Bootcamp_Class">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="slide-image img-fluid" src="./Assets/IMG-2774.jpg" class="d-block w-100"
+                                    alt="Adelakun_Graduation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience" id="experience">
+            <div class="my-experience-header">
+                <h3>
+                    Experience
+                </h3>
+            </div>
+
+            <div class="my-experience-content">
+                <div class="info">
+                    <h6>
+                        Internship Lab Technician, <span>Oluwaseun Medical Centre</span>
+                        <hr>
+                    </h6>
+
+                    <div class="info-li">
+                        <li>Designed and conducted lab tests according to standard procedures.</li>
+                        <li>Conducted tests on new products or experimental processes.</li>
+                        <li>
+                            Administrative tasks such as maintaining notebooks, documenting procedures, and preparing
+                            orders.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <span>
+                        Jun 2019 - Jan 2020
+                        Ogbomosho, Nigeria
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ------- ARTICLE SECTION -------- -->
+
+    <article>
+        <div class="article" id="projects">
+            <div class="my-projects">
+                <div class="projects-header">
+                    <h3>
+                        Projects
+                    </h3>
+                </div>
+
+                <div class="tradexpress">
+                    <h6>
+                        TradExpress, <span>A frontend project</span> <a target="_blank"
+                            href="https://adelakuntradexpress.netlify.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </h6>
+                    <li>This is a frontend project built using Html, CSS, Reactjs, and Bootstrap.</li>
+                    <li>It's a trading platform landing page called TradExpress, where a user can sign up, buy and sell
+                        cryptocurrency.
+                    </li>
+                    <li>
+                        Also, an API was fetched in order for a user to see the real-time current market price of all
+                        the top cryptocurrencies.
+                    </li>
+                </div>
+
+                <div class="tradexpress">
+                    <h6>
+                        Post List,<span> A full stack web project</span> <a target="_blank"
+                            href="https://github.com/thisisadelakun/PostList/"><i
+                                class="bi bi-box-arrow-up-right"></i></a>
+                    </h6>
+
+                    <li>A project built using Html, CSS, Bootstrap, and Reactjs in our front end, while we used Python
+                        and Django at our backend.
+                    </li>
+                    <li>
+                        This project was our final project during my course of study, which consist of RESTful API. In
+                        this project, a user can post his/her blog.
+                    </li>
+                    <li>
+                        This project was carried out by a group of 3 people including me.
+                    </li>
+                </div>
+
+                <div class="tradexpress">
+                    <h6>
+                        Spatial variability of two major FM Radio Stations,<span> within Ogbomosho</span> <a
+                            target="_blank" href="https://adelakuntradexpress.netlify.app/"><i
+                                class="bi bi-box-arrow-up-right"></i></a>
+                    </h6>
+
+                    <li>In this study, an effective field strength measurement of the channel across Ogbomoso, Oyo
+                        state, was conducted as far as road accessibility permits.
+                    </li>
+                    <li>
+                        Other necessary radio communication Other necessary radio communication parameters on the
+                        MHz band such as line of sight, elevation and geographical coordinates of the various data
+                        points were also determined.
+                    </li>
+                    <li>
+                        This project was my final year project at the university, and it was carried out by a
+                        group of 7 students including me.
+                    </li>
+                </div>
+                <div id="more">
+                    <div class="other-projects">
+                        <h4>
+                            Other Projects
+                        </h4>
+                        <div class="tradexpress">
+                            <h6>Game Centre Landing Page</h6>
+                            <p>Built using HTML,CSS & Bootstrap</p>
+                            <div class='sourcing'>
+                                <button class="goBtn">
+                                    <a href="https://github.com/thisisadelakun/bootstrap-basic" target="_blank">View
+                                        source
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                                <button class="goBtn">
+                                    <a href="https://adelakunboostrap.netlify.app" target="_blank">Go Live
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tradexpress">
+                            <h6>oopstudio Landing Page</h6>
+                            <p>Built using HTML,CSS & JS</p>
+                            <div class='sourcing'>
+                                <button class="goBtn">
+                                    <a href="https://github.com/thisisadelakun/LoopStudio" target="_blank">View
+                                        source
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                                <button class="goBtn">
+                                    <a href="https://adelakunloopstudio.netlify.app/" target="_blank">Go Live
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tradexpress">
+                            <h6>Coin Flip Game</h6>
+                            <p>Built using HTML,CSS & JS</p>
+                            <div class='sourcing'>
+                                <button class="goBtn">
+                                    <a href="https://github.com/thisisadelakun/coinFlipJS" target="_blank">View source
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                                <button class="goBtn">
+                                    <a href="https://adelakuncoinflip.netlify.app/" target="_blank">Go Live
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span id="dots"></span>
+                <button onclick="seeMore()" id="myBtn">SEE MORE</button>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="certification">
+            <div class="info">
+                <h6>
+                    CERTIFICATIONS
+                    <hr>
+                </h6>
+                <p>
+                    Full Stack Web Development, <span>Tech Studio Academy</span>
+                </p>
+            </div>
+
+            <div class="date">
+                <span>
+                    Jan 2023
+                    Lagos, Nigeria
+                </span>
+            </div>
+        </div>
+
+        <div class="certification awards">
+            <div class="info">
+                <h6>
+                    AWARDS
+                    <hr>
+                </h6>
+                <p>
+                    Student Recognition Award, <span>Tech Studio Academy</span>
+                </p>
+            </div>
+
+            <div class="date">
+                <span>
+                    Dec 2022
+                </span>
+            </div>
+        </div>
+
+        <div class="certification ve">
+            <div class="info">
+                <h6>
+                    VOLUNTEER EXPERIENCE
+                    <hr>
+                </h6>
+                <p>
+                    National Youth Service Corps, (NYSC), <span>Community Development Service</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="certification Language">
+            <div class="info">
+                <h6>
+                    LANGUAGES
+                    <hr>
+                </h6>
+                <p>
+                    English Language <span>Fluent</span>
+                </p>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- ---------- FOOTER SECTION ----------- -->
+
+    <footer class="footer">
+        <div class="contacts" id="contact-me">
+            <div class="contact-header">
+                <h3>Hi there,</h3>
+                <p class="intouch">
+                    Let's discuss your project.<br />
+                </p>
+            </div>
+
+            <div class='sub-contact-content'>
+                <div class='sub-contact-content1'>
+                    <div class='mail'>
+                        <p class="linking">Feel free to contact me via email</p>
+                        <a href="mailto:adelakunabayomi123@gmail.com">
+                            <p class='mails'>
+                                <i class="bi bi-envelope-fill"></i> adelakunabayomi123@gmail.com
+                            </p>
+                        </a><br />
+                        <p class="links">Or find me on:</p>
+                    </div>
+
+                    <div class='socialmedia'>
+                        <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178" target="blank">
+
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/thisisadelakun?igshid=YmMyMTA2M2Y=" target="blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/thisisadelakun" target="blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://twitter.com/thisisadelakun?s=11&t=p8KES3QWDuTVQAluQEAB6Q" target="blank">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='madewithlove'>
+                    <p class='madewith'>Made with <i class="bi bi-heart-fill"></i> by
+                        <a href="https://instagram.com/thisisadelakun?igshid=YmMyMTA2M2Y=" target="blank">
+                            @thisisadelakun.
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+    </footer>
+
+    <script type="text/javascript" src="./App.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

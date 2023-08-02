@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #071b27;
+}
+
+/* -----------HEADER SECTION------------- */
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+    z-index: 500;
+    color: rgba(0, 255, 200, 0.705);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 500;
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.164);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: rgba(0, 255, 200, 0.705);
+    font-weight: 900;
+    z-index: 500;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    right: 5%;
+}
+
+.material-icons {
+    margin-top: 2rem;
+    font-size: 2.3rem;
+}
+
+.navbar-title {
+    margin: 0;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.navbar-title img {
+    z-index: 500;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 255, 200, 0.705);
+    padding: 3px 2px;
+    background-color: rgba(0, 255, 200, 0.705);
+    filter: grayscale(50%);
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #071b27;
+    visibility: hidden;
+    overflow-x: hidden;
+}
+
+.navbar-menu a {
+    font-size: 13px;
+    z-index: 500;
+    color: rgba(250, 235, 215, 0.781);
+    text-decoration: none;
+}
+
+.navbar-menu a:hover {
+    color: rgba(0, 255, 200, 0.705);
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
+.navbar-menu>.button {
+    color: rgba(0, 255, 200, 0.705);
+    background: transparent;
+    padding: 0 8px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+.header-text span {
+    font-size: 14px;
+    color: rgba(0, 255, 200, 0.705);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    color: rgba(250, 235, 215, 0.781);
+
+}
+
+.header-text h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(243, 237, 229, 0.514);
+}
+
+.header-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(243, 237, 229, 0.89);
+    margin-top: 1rem;
+}
+
+.header-text a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 255, 200, 0.705);
+    margin: 2rem 0;
+    text-decoration: none;
+    position: relative;
+    animation: pulse 900ms ease-in-out infinite alternate;
+    overflow-y: hidden;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.1;
+        top: 0px;
+    }
+
+    to {
+        opacity: 1;
+        top: 7px;
+    }
+
+}
+
+/* ----------- MEDIA SECTION ------------ */
+main {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.about-me {
+    width: 90%;
+    margin: auto;
+}
+
+.about-me-header {
+    position: relative;
+}
+
+.about-me-header h3 {
+    color: rgba(243, 237, 229, 0.89);
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
+}
+
+
+/* .about-me-header h3::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background: rgba(243, 237, 229, 0.514);
+    right: 0;
+    top: 40%;
+    position: absolute;
+} */
+
+.about-me-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-content {
+    margin-top: 2rem;
+}
+
+.about-me-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(243, 237, 229, 0.514);
+}
+
+.about-me-content span {
+    color: rgba(0, 255, 200, 0.705);
+}
+
+.skills {
+    width: 90%;
+    margin: auto;
+}
+
+.skills h6 {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 1rem;
+    color: rgba(243, 237, 229, 0.89);
+    overflow-y: hidden;
+}
+
+.list-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-skills p {
+    color: rgba(243, 237, 229, 0.514);
+    text-indent: 5px;
+    margin-top: 1rem;
+}
+
+.skills-li li {
+    list-style-type: "> ";
+    text-indent: 15px;
+}
+
+.gallery {
+    width: 90%;
+    margin: auto;
+}
+
+.gallery h6 {
+    font-family: 'Roboto Mono', monospace;
+    padding: 2rem 0;
+    color: rgba(243, 237, 229, 0.89);
+    overflow-y: hidden;
+}
+
+.carousel {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 255, 200, 0.705);
+    border-top: 1px solid rgba(0, 255, 200, 0.705);
+    padding: 1rem 0;
+
+}
+
+.slide-image {
+    height: 300px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.experience {
+    padding-top: 5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.my-experience-header {
+    position: relative;
+}
+
+.my-experience-header h3 {
+    color: rgba(243, 237, 229, 0.89);
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
+}
+
+.my-experience-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.info h6 {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 1rem;
+    color: rgba(243, 237, 229, 0.89);
+    overflow-y: hidden;
+}
+
+.info span {
+    font-style: italic;
+    color: rgba(243, 237, 229, 0.575);
+}
+
+.info-li {
+    margin-top: 1rem;
+}
+
+.info-li li {
+    list-style-type: disc;
+    text-indent: 5px;
+}
+
+.date {
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(243, 237, 229, 0.575);
+    margin-top: 1rem;
+}
+
+/* --------------- ARTICLE SESSION ---------------- */
+
+article {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.article {
+    width: 90%;
+    margin: auto;
+}
+
+.projects-header {
+    position: relative;
+}
+
+.projects-header h3 {
+    color: rgba(243, 237, 229, 0.89);
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
+}
+
+.tradexpress {
+    margin: 1.5rem 0.5rem;
+    border: 1px solid;
+    border: none;
+    box-shadow: 0px 0px 15px 5px #031720d8;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.tradexpress h6 {
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(243, 237, 229, 0.89);
+    overflow-y: hidden;
+}
+
+.tradexpress span {
+    font-style: italic;
+    color: rgba(0, 255, 200, 0.705);
+    font-size: 13px;
+}
+
+.tradexpress a {
+    font-style: italic;
+    color: rgba(0, 255, 200, 0.466);
+}
+
+.tradexpress li {
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(243, 237, 229, 0.575);
+}
+
+#more {
+    display: none;
+}
+
+.other-projects h4 {
+    color: rgba(243, 237, 229, 0.89);
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tradexpress p {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(243, 237, 229, 0.575);
+}
+
+.sourcing {
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.goBtn {
+    width: 15rem;
+    height: 2rem;
+    background-color: #031720d8;
+    border: none;
+}
+
+.sourcing a {
+    text-decoration: none;
+}
+
+#myBtn {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    background: transparent;
+    color: rgba(0, 255, 200, 0.705);
+    border: 1px solid rgba(0, 255, 200, 0.705);
+}
+
+.goBtn:hover,
+#myBtn:hover {
+    background-color: rgba(0, 255, 200, 0.151)
+}
+
+.certification {
+    padding-top: 2rem;
+    width: 90%;
+    margin: auto;
+}
+
+.certification p {
+    color: rgba(0, 255, 200, 0.705);
+}
+
+/* -------- FOOTER SECTION --------------- */
+footer {
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-header h3 {
+    color: rgba(243, 237, 229, 0.89);
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
+}
+
+.contact-header .intouch {
+    color: rgba(243, 237, 229, 0.575);
+    padding-bottom: 0.2rem;
+}
+
+.sub-contact-content {
+    margin: 1rem 0;
+}
+
+.linking,
+.links {
+    color: rgba(0, 255, 200, 0.705);
+    font-family: 'Roboto', sans-serif;
+    font-size: 500;
+}
+
+.sub-contact-content1 a {
+    color: rgba(243, 237, 229, 0.575);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.sub-contact-content1 a:hover {
+    color: rgba(0, 255, 200, 0.705);
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.madewithlove {
+    margin: 1rem 0;
+    color: rgba(243, 237, 229, 0.575);
+    letter-spacing: 2px;
+}
+
+.madewithlove a {
+    margin: 1rem 0;
+    color: rgba(243, 237, 229, 0.575);
+    text-decoration: none;
+}
+
+.socialmedia a:hover,
+.madewithlove a:hover {
+    color: rgba(0, 255, 200, 0.705);
+}
+
+
+
+/* -------------------- MEDIA QUERY ------------------------- */
+
+/* -------- MAIN SECTION --------------- */
+
+@media only screen and (min-width: 375px) {
+    .header-text {
+        padding-top: 12rem;
+    }
+
+    .header-text span {
+        font-size: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+
+    }
+
+    .header-text h6 {
+        font-size: 23px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .header-text a {
+        font-size: 18px;
+        margin: 5rem 0;
+
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .navbar-burger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-menu {
+        position: absolute;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+        right: 5%;
+        top: 20%;
+
+    }
+
+    .header-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .header-text span {
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text h6 {
+        font-size: 30px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+        margin-top: 2rem;
+        width: 60%;
+    }
+
+    .header-text a {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+
+    /* -------- MAIN SECTION --------------- */
+
+    .about-me {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-me-header {
+        width: 50%;
+    }
+
+    .about-me-header h3 {
+        font-size: 40px;
+    }
+
+    .about-me-content p {
+        font-size: 16px;
+    }
+
+    .skills h6 {
+        font-size: 28px;
+    }
+
+    .list-skills p {
+        font-size: 16px;
+    }
+
+    .skills-li li {
+        font-size: 14px;
+    }
+
+    .experience {
+        padding-top: 7rem;
+        width: 60%;
+        margin: auto;
+    }
+
+    .my-experience-header {
+        width: 70%;
+    }
+
+    .my-experience-header h3 {
+        font-size: 40px;
+
+    }
+
+    .info-li li {
+        font-size: 15px;
+    }
+
+    article {
+        padding-top: 7rem;
+    }
+
+    .article {
+        width: 80%;
+        margin: auto;
+    }
+
+    .projects-header h3 {
+        font-size: 40px;
+    }
+
+    .tradexpress {
+        margin: 2rem;
+    }
+
+    .tradexpress h6 {
+        font-size: 28px;
+    }
+
+    .tradexpress span {
+        font-size: 15px;
+    }
+
+    .tradexpress li {
+        font-size: 16px;
+    }
+
+    .certification {
+        padding-top: 3rem;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .certification p {
+        color: rgba(0, 255, 200, 0.705);
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .about-me-main-content {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .gallery {
+        width: 100%;
+        margin: auto;
+    }
+
+    .my-experience-content {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .date {
+        margin-bottom: 1.5rem;
+    }
+
+}
